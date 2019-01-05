@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="assets/css/framework7.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="apple-touch-icon" href="assets/img/f7-icon-square.png">
+  <link rel="icon" href="assets/img/f7-icon.png">
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title sliding"><i class="f7-icons">compose</i> Login Credentials</div>
+            <div class="subnavbar">
+                <!-- Searchbar with auto init -->
+                <form class="searchbar">
+                  <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                      <input type="search" placeholder="Search">
+                      <i class="searchbar-icon"></i>
+                      <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        <div class="page-content">
+            <div class="list searchbar-found">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Acura</div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Audi</div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">BMW</div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Volvo</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Nothing found message -->
+            <div class="block searchbar-not-found">
+              <div class="block-inner">Nothing found</div>
+            </div>       
+            
+            <div class="col"><a class="button convert-form-to-data" href="#">Get Data</a></div>
+
+            <div class="popup demo-popup">
+                <div class="page">
+                  <div class="navbar">
+                    <div class="navbar-inner">
+                      <div class="title">Add Notes</div>
+                      <div class="right"><a href="#" class="link popup-close">X</a></div>
+                    </div>
+                  </div>
+                  <div class="page-content">
+                      <form id="my-form" class="list store-data">
+                          <ul>
+                              <li class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-title item-label">Name</div>
+                                  <div class="item-input-wrap">
+                                    <input name="name" type="text" placeholder="Name" required>
+                                    <span class="input-clear-button"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="item-content item-input">
+                                  <div class="item-inner">
+                                    <div class="item-title item-label">Description</div>
+                                    <div class="item-input-wrap">
+                                      <textarea name="desc" class="resizable" placeholder="Description" rows="5" required></textarea>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <button class="col button button-outline button-fill" id="save_form_data">Submit</button>
+                                </li>
+                            </ul>
+                      </form>
+                  </div>
+                </div>
+              </div>
+              <div class="fab fab-extended fab-right-bottom">
+                <a href="#" class="popup-open" data-popup=".demo-popup">
+                  <i class="icon f7-icons">add</i>
+                </a>
+              </div>
+
+        </div>
+    </div>
+  </div>
+  <script src="assets/js/framework7.min.js"></script>
+  <script src="assets/js/routes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
